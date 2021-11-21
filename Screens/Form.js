@@ -16,6 +16,8 @@ export default function Form() {
 
     return (
         <View>
+            <Text style={styles.header}>Welcome to Visolve</Text>
+            <Text style={styles.subHeader}>Solutions to all your problems!!!</Text>
             <TextInput
                 placeholder="Enter a one variable equation"
                 style={styles.input}
@@ -33,5 +35,16 @@ export default function Form() {
 }
 
 const styles = StyleSheet.create({
-    
+    header:{
+        fontSize: 30,   
+        marginBottom: 30,
+        fontWeight:'bold',
+        alignItems:'center',
+        textAlign: 'center'
+    },
+    subHeader:{
+        alignItems:'center',
+        textAlign: 'center',
+        marginBottom: 50
+    }
 })
